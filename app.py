@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from difflib import get_close_matches
+from flask_cors import CORS
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # Read Kannada words from the file
 def read_kannada_words(file_path):
