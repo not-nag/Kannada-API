@@ -23,7 +23,7 @@ def autocorrect(sentence, word_list):
         # Check if the word is in the Kannada words list
         if word not in word_list:
             # If not, find the closest match using difflib
-            closest_match = get_close_matches(word, word_list, n=1, cutoff=0.4)
+            closest_match = get_close_matches(word, word_list, n=1, cutoff=0.2)
 
             # If a close match is found, replace the word
             if closest_match:
